@@ -48,6 +48,8 @@ Create a file called `.env` in the root directory and add the following:
 OPENAI_API_KEY=your-api-key
 
 AIRTABLE_API_KEY=your-api-key
+
+AIRTABLE_BASE_ID=your-base-id
 ```
 
 *Note: don't commit the `.env` file to the repository.*
