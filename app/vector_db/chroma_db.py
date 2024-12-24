@@ -1,7 +1,7 @@
-from langchain_community.vectorstores.chroma import Chroma
+from app.config import settings
+from langchain_chroma import Chroma
 from langchain_openai import OpenAIEmbeddings
 
-from config import settings
 
 _db_instance = None
 

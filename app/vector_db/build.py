@@ -10,15 +10,15 @@ from langchain_community.document_loaders import PyPDFDirectoryLoader
 from langchain_community.vectorstores.chroma import Chroma
 from langchain_core.documents import Document
 
-from config import settings
+import sys, pathlib
+sys.path.append(str(pathlib.Path(__file__).parent.parent.parent))
+
+from app.config import settings
 from chroma_db import get
 
 CHUNK_SIZE = 1000
 CHUNK_OVERLAP = 200
 
-logging.basicConfig(level=logging.INFO)
-logging.getLogger('httpx').setLevel(logging.WARNING)
-logging.getLogger('chromadb').setLevel(logging.WARNING)
 logger = logging.getLogger(__name__)
 
 

@@ -1,6 +1,6 @@
 import asyncio
 from pydantic_ai import Agent
-import chroma_db
+from vector_db import chroma_db
 
 
 async def query(question: str):

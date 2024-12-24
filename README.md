@@ -17,7 +17,7 @@ This is the code for the "Build a Lead Generation AI Agent" tutorial on [YouTube
 ### Clone the repository
 
 ```bash
-git clone https://github.com/JonathanMiz/lead-gen-agent-yt.git
+git clone https://github.com/JonathanMiz/deploy-lead-gen-agent-yt.git
 
 cd lead-gen-agent-yt
 ```
