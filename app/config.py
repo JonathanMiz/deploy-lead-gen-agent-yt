@@ -11,6 +11,7 @@ load_dotenv()
 
 
 class Settings(BaseSettings):
+    PORT: int = 3030
     OPENAI_API_KEY: str
     AIRTABLE_API_KEY: str
     AIRTABLE_BASE_ID: str

@@ -1,3 +1,6 @@
+import sys, os, pathlib
+sys.path.append(os.path.join(pathlib.Path(__file__).parent.parent.parent))
+
 from app.config import settings
 from langchain_chroma import Chroma
 from langchain_openai import OpenAIEmbeddings

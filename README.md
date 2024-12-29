@@ -10,8 +10,13 @@ This is the code for the "Build a Lead Generation AI Agent" tutorial on [YouTube
 - [**Chroma**](https://www.trychroma.com/) for the vector database.
 - [**OpenAI**](https://platform.openai.com/) for the AI model.
 - [**Airtable**](https://airtable.com/) for the database.
+- [**FastAPI**](https://fastapi.tiangolo.com/) for the API.
+- [**Docker**](https://www.docker.com/) for the containerization.
+- [**AWS**](https://aws.amazon.com/) for the deployment.
+- [**Serverless**](https://www.serverless.com/) for the serverless deployment.
+- [**Voiceflow**](https://www.voiceflow.com/) for the chatbot widget.
 
-## How To Use It
+## Environment
 
 
 ### Clone the repository
@@ -19,7 +24,7 @@ This is the code for the "Build a Lead Generation AI Agent" tutorial on [YouTube
 ```bash
 git clone https://github.com/JonathanMiz/deploy-lead-gen-agent-yt.git
 
-cd lead-gen-agent-yt
+cd deploy-lead-gen-agent-yt
 ```
 
 ### Create a virtual environment
