@@ -5,6 +5,7 @@ set -e
 echo "-> build vector db"
 python3 app/vector_db/build.py
 
+export AWS_REGION=""
 export REGISTRY_URL=""
 export DOCKER_IMAGE_NAME="${REGISTRY_URL}/lead-gen-bot-yt:latest"
 

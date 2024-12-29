@@ -11,3 +11,4 @@ pydantic==2.10.3
 pydantic-ai-slim[openai]==0.0.13
 fastapi==0.111.0
 uvicorn==0.30.0
+mangum==0.17.0

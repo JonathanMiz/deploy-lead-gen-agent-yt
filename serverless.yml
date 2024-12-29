@@ -1,0 +1,13 @@
+service: ${env:SERVICE_NAME, 'lead-gen-bot-yt'}
+provider:
+  name: aws
+  runtime: python3.11
+functions:
+  api:
+    image: ${env:DOCKER_IMAGE_NAME}
+    events:
+      - http:
+          path: /{proxy+}
+          method: ANY
+    memorySize: 512
+    timeout: 30

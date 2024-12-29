@@ -1,11 +1,13 @@
 from fastapi import FastAPI, Request, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 import uvicorn
+from mangum import Mangum
 
 from config import settings
 import agent
 
 app = FastAPI(title="Website Lead Generation Agent")
+handler = Mangum(app)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],  # TODO: Change this to the actual domain of the website
