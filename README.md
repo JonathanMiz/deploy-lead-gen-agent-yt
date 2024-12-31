@@ -65,6 +65,12 @@ To get an Airtable API key, visit [Airtable](https://airtable.com/account).
 
 ## Building the AI Agent
 
+to run the following commands, you need to add the current directory to the python path:
+
+```bash
+export PYTHONPATH=$PYTHONPATH:.
+```
+
 ### Build the vector database
 
 ```bash
