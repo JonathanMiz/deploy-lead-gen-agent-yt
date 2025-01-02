@@ -127,9 +127,8 @@ http://0.0.0.0:3030/call-agent?user_id=1&query=%22hey%22
 2. Install the AWS CLI.
 3. Configure the AWS CLI with your credentials.
 4. Create an ECR repository.
-5. Push the docker image to ECR.
-
-set your service name in the `docker/deploy.sh` file.
+5. set your service name in the `docker/deploy.sh` file.
+6. set env variables in the AWS SSM parameter store with the same names as in the `AWS_LAMBDA_SERVICE_NAME` file.
 
 then run the following command to deploy the docker image to AWS:
 

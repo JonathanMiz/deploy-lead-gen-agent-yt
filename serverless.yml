@@ -1,7 +1,18 @@
-service: ${env:SERVICE_NAME, 'lead-gen-bot-yt'}
+service: 'lead-gen-agent-yt'
 provider:
   name: aws
   runtime: python3.11
+  environment:
+    IS_PROD: True
+  iamRoleStatements:
+    - Effect: Allow
+      Action:
+        - ssm:GetParametersByPath
+        - ssm:GetParameters
+        - ssm:GetParameter
+      Resource:
+        - Fn::Sub: 'arn:aws:ssm:${AWS::Region}:${AWS::AccountId}:parameter/lead-gen-agent-yt'
+        - Fn::Sub: 'arn:aws:ssm:${AWS::Region}:${AWS::AccountId}:parameter/lead-gen-agent-yt/*'
 functions:
   api:
     image: ${env:DOCKER_IMAGE_NAME}

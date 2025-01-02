@@ -8,7 +8,6 @@ source docker/build.sh
 
 docker push "${DOCKER_IMAGE_NAME}"
 
-export SERVICE_NAME="lead-gen-bot-yt"
 sls deploy --region ${AWS_REGION}
 
 end_time=$(date +%s)
