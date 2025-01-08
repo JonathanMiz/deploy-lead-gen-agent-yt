@@ -148,4 +148,4 @@ sudo bash docker/deploy.sh
 
 ### Watch the full step-by-step tutorial
 
-[![Watch the tutorial](https://img.youtube.com/vi/RGEJhcWdXR4/sddefault.jpg)](https://youtu.be/RGEJhcWdXR4)
+[![Watch the tutorial](https://img.youtube.com/vi/uARdJV-9tEc/sddefault.jpg)](https://youtu.be/uARdJV-9tEc)
